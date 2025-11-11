@@ -16,7 +16,7 @@ interface ProjectCardProps {
 }
 
 function ProjectCard({ project, index }: ProjectCardProps) {
-  const { elementRef, isVisible } = useScrollAnimation({ threshold: 0.2 });
+  const { elementRef, isVisible } = useScrollAnimation<HTMLDivElement>({ threshold: 0.2 });
   
   return (
     <div
@@ -78,7 +78,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
 }
 
 export default function Projects() {
-  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
+  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation<HTMLHeadingElement>();
   
   const projects = [
     {

@@ -4,9 +4,9 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import ContactForm from './ContactForm';
 
 export default function Contact() {
-  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
-  const { elementRef: contentRef, isVisible: contentVisible } = useScrollAnimation();
-  const { elementRef: formRef, isVisible: formVisible } = useScrollAnimation();
+  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation<HTMLHeadingElement>();
+  const { elementRef: contentRef, isVisible: contentVisible } = useScrollAnimation<HTMLDivElement>();
+  const { elementRef: formRef, isVisible: formVisible } = useScrollAnimation<HTMLDivElement>();
 
   const handleFormSubmit = async (data: { name: string; email: string; message: string }) => {
     // You can integrate with an API here, for example:

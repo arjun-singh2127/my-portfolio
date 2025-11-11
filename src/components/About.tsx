@@ -3,9 +3,9 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 export default function About() {
-  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
-  const { elementRef: contentRef, isVisible: contentVisible } = useScrollAnimation();
-  const { elementRef: skillsRef, isVisible: skillsVisible } = useScrollAnimation();
+  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation<HTMLHeadingElement>();
+  const { elementRef: contentRef, isVisible: contentVisible } = useScrollAnimation<HTMLDivElement>();
+  const { elementRef: skillsRef, isVisible: skillsVisible } = useScrollAnimation<HTMLDivElement>();
 
   const skills = [
     'JavaScript',
