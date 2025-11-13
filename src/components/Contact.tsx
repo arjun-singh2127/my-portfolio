@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800"
+      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-emerald-50/80 dark:bg-emerald-950/40"
     >
       <div className="max-w-4xl mx-auto">
         <h2 
@@ -57,7 +57,7 @@ export default function Contact() {
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <svg
-                  className="w-6 h-6 text-blue-600 dark:text-blue-400"
+                  className="w-6 h-6 text-emerald-500 dark:text-emerald-300"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -69,7 +69,7 @@ export default function Contact() {
                 </svg>
                 <a
                   href="mailto:arjunzaynesingh@gmail.com"
-                  className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-gray-700 dark:text-gray-300 hover:text-emerald-500 dark:hover:text-emerald-300"
                 >
                   arjunzaynesingh@gmail.com
                 </a>
@@ -86,7 +86,7 @@ export default function Contact() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors"
                     aria-label={social.name}
                   >
                     <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">

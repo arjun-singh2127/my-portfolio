@@ -28,8 +28,8 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 overflow-hidden"
     >
       {/* Animated Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 dark:from-blue-900 dark:via-purple-900 dark:to-pink-900 animate-gradient-shift"></div>
-      <div className="absolute inset-0 bg-gradient-to-tr from-blue-400 via-cyan-500 to-purple-600 dark:from-blue-800 dark:via-cyan-800 dark:to-purple-800 opacity-75 animate-gradient-shift-reverse"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 via-lime-500 to-emerald-600 dark:from-emerald-900 dark:via-green-950 dark:to-black animate-gradient-shift"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-green-300 via-emerald-400 to-lime-500 dark:from-emerald-800 dark:via-green-900 dark:to-black opacity-75 animate-gradient-shift-reverse"></div>
       
       {/* Content Container with backdrop */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
@@ -40,7 +40,7 @@ export default function Hero() {
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg px-2">
             Hi, I'm{' '}
-            <span className="text-yellow-300 dark:text-yellow-200">Arjun Singh</span>
+            <span className="text-lime-300 dark:text-lime-200">Arjun Singh</span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 dark:text-white mb-3 sm:mb-4 drop-shadow-md px-2">
             Student / Programmer / Aspiring Game Developer
@@ -52,14 +52,14 @@ export default function Hero() {
             <a
               href="#projects"
               onClick={(e) => handleSmoothScroll(e, '#projects')}
-              className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-white/20 backdrop-blur-sm text-white rounded-lg font-semibold hover:bg-white/30 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 border border-white/30 cursor-pointer text-center"
+              className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-emerald-500/90 backdrop-blur-sm text-white rounded-lg font-semibold hover:bg-emerald-400/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 border border-emerald-300/70 cursor-pointer text-center"
             >
               View My Work
             </a>
             <a
               href="#contact"
               onClick={(e) => handleSmoothScroll(e, '#contact')}
-              className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base border-2 border-white/50 text-white rounded-lg font-semibold hover:bg-white/20 hover:border-white transition-all backdrop-blur-sm cursor-pointer text-center"
+              className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base border-2 border-emerald-300/80 text-emerald-950 bg-emerald-100/80 rounded-lg font-semibold hover:bg-emerald-200 hover:border-emerald-200 transition-all backdrop-blur-sm cursor-pointer text-center dark:text-emerald-100 dark:bg-emerald-700/40 dark:hover:bg-emerald-600/50"
             >
               Get In Touch
             </a>
@@ -90,4 +90,5 @@ export default function Hero() {
     </section>
   );
 }
+
 

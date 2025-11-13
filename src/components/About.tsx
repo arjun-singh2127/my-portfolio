@@ -21,7 +21,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800"
+      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-emerald-50/80 dark:bg-emerald-950/40"
     >
       <div className="max-w-6xl mx-auto">
         <h2 
@@ -68,7 +68,7 @@ export default function About() {
               {skills.map((skill, index) => (
                 <span
                   key={skill}
-                  className={`px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-xs sm:text-sm font-medium transition-all duration-500 ${
+                  className={`px-3 sm:px-4 py-1.5 sm:py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200 rounded-full text-xs sm:text-sm font-medium transition-all duration-500 ${
                     skillsVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'
                   }`}
                   style={{ transitionDelay: `${400 + index * 50}ms` }}

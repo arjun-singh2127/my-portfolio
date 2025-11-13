@@ -25,7 +25,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-900 text-gray-300 py-6 sm:py-8 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-r from-emerald-900 via-black to-emerald-950 text-emerald-100 py-6 sm:py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center space-y-4 sm:space-y-6">
           {/* Social Media Icons */}
@@ -36,7 +36,7 @@ export default function Footer() {
                 href={social.url}
                 target={social.name === 'Email' ? '_self' : '_blank'}
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110"
+                className="text-emerald-300 hover:text-emerald-100 transition-colors duration-300 transform hover:scale-110"
                 aria-label={social.name}
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor">
@@ -51,7 +51,7 @@ export default function Footer() {
             <p className="text-xs sm:text-sm">
               © {currentYear} Arjun Singh. All rights reserved.
             </p>
-            <p className="text-xs sm:text-sm text-gray-500">
+            <p className="text-xs sm:text-sm text-emerald-300/80">
               Built with Next.js, TypeScript, and Tailwind CSS
             </p>
           </div>

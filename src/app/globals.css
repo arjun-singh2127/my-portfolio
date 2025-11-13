@@ -6,8 +6,8 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f0fff4;
+  --foreground: #0f172a;
 }
 
 .dark {
@@ -121,3 +121,4 @@ html {
 .animate-gradient-shift-reverse {
   animation: gradient-shift-reverse 20s ease-in-out infinite;
 }
+

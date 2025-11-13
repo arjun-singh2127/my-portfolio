@@ -52,7 +52,7 @@ export default function Navigation() {
           <a
             href="#home"
             onClick={(e) => handleSmoothScroll(e, '#home')}
-            className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
+            className="text-xl font-bold text-gray-900 dark:text-white hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors cursor-pointer"
           >
             Portfolio
           </a>
@@ -64,7 +64,7 @@ export default function Navigation() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleSmoothScroll(e, link.href)}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium cursor-pointer"
+                className="text-gray-700 dark:text-gray-300 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors font-medium cursor-pointer"
               >
                 {link.name}
               </a>
@@ -177,7 +177,7 @@ export default function Navigation() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleSmoothScroll(e, link.href)}
-                className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium cursor-pointer py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded"
+                className="block text-gray-700 dark:text-gray-300 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors font-medium cursor-pointer py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded"
               >
                 {link.name}
               </a>

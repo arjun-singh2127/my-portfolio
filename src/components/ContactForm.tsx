@@ -108,7 +108,7 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors ${
+          className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors ${
             errors.name
               ? 'border-red-500 dark:border-red-500'
               : 'border-gray-300 dark:border-gray-600'
@@ -135,7 +135,7 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors ${
+          className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors ${
             errors.email
               ? 'border-red-500 dark:border-red-500'
               : 'border-gray-300 dark:border-gray-600'
@@ -162,7 +162,7 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
           value={formData.message}
           onChange={handleChange}
           rows={5}
-          className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors resize-none ${
+          className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors resize-none ${
             errors.message
               ? 'border-red-500 dark:border-red-500'
               : 'border-gray-300 dark:border-gray-600'
@@ -182,10 +182,10 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
       <button
         type="submit"
         disabled={isSubmitting}
-        className={`w-full px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-blue-600 text-white rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl ${
+        className={`w-full px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-emerald-600 text-white rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl ${
           isSubmitting
             ? 'opacity-50 cursor-not-allowed'
-            : 'hover:bg-blue-700 transform hover:-translate-y-0.5'
+            : 'hover:bg-emerald-700 transform hover:-translate-y-0.5'
         }`}
       >
         {isSubmitting ? (

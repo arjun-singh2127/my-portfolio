@@ -21,7 +21,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <div
       ref={elementRef}
-      className={`bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
+      className={`bg-emerald-50/80 dark:bg-emerald-950/40 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
       style={{ transitionDelay: `${200 + index * 100}ms` }}
@@ -48,7 +48,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-2 sm:px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs sm:text-sm font-medium"
+              className="px-2 sm:px-3 py-1 bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200 rounded text-xs sm:text-sm font-medium"
             >
               {tech}
             </span>
@@ -57,7 +57,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
           <a
             href={project.github}
-            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline font-medium transition-colors"
+            className="text-emerald-500 dark:text-emerald-300 hover:text-emerald-600 dark:hover:text-emerald-200 hover:underline font-medium transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -65,7 +65,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
           </a>
           <a
             href={project.demo}
-            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline font-medium transition-colors"
+            className="text-emerald-500 dark:text-emerald-300 hover:text-emerald-600 dark:hover:text-emerald-200 hover:underline font-medium transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -113,7 +113,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900"
+      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-emerald-50/70 dark:bg-emerald-950/60"
     >
       <div className="max-w-6xl mx-auto">
         <h2 
