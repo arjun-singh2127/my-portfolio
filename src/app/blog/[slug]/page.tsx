@@ -6,13 +6,14 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function ProjectBlogPage({ params }: PageProps) {
-  const projectBlog = getProjectBlog(params.slug);
+export default async function ProjectBlogPage({ params }: PageProps) {
+  const { slug } = await params;
+  const projectBlog = getProjectBlog(slug);
 
   if (!projectBlog) {
     notFound();
