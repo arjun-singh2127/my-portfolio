@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 interface ProjectCardProps {
@@ -10,6 +11,7 @@ interface ProjectCardProps {
     technologies: string[];
     github: string;
     demo: string;
+    blogSlug?: string;
     image: string;
   };
   index: number;
@@ -55,22 +57,35 @@ function ProjectCard({ project, index }: ProjectCardProps) {
           ))}
         </div>
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-          <a
-            href={project.github}
-            className="text-emerald-500 dark:text-emerald-300 hover:text-emerald-600 dark:hover:text-emerald-200 hover:underline font-medium transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub →
-          </a>
-          <a
-            href={project.demo}
-            className="text-emerald-500 dark:text-emerald-300 hover:text-emerald-600 dark:hover:text-emerald-200 hover:underline font-medium transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo →
-          </a>
+          {project.github !== '#' && (
+            <a
+              href={project.github}
+              className="text-emerald-500 dark:text-emerald-300 hover:text-emerald-600 dark:hover:text-emerald-200 hover:underline font-medium transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub →
+            </a>
+          )}
+          {project.blogSlug ? (
+            <Link
+              href={`/blog/${project.blogSlug}`}
+              className="text-emerald-500 dark:text-emerald-300 hover:text-emerald-600 dark:hover:text-emerald-200 hover:underline font-medium transition-colors"
+            >
+              View Updates →
+            </Link>
+          ) : (
+            project.demo !== '#' && (
+              <a
+                href={project.demo}
+                className="text-emerald-500 dark:text-emerald-300 hover:text-emerald-600 dark:hover:text-emerald-200 hover:underline font-medium transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo →
+              </a>
+            )
+          )}
         </div>
       </div>
     </div>
@@ -88,6 +103,7 @@ export default function Projects() {
       technologies: ['Unity', 'C#', 'Game Design', '2D Animation'],
       github: '#',
       demo: '#',
+      blogSlug: 'unity-game-project',
       image: '/project-1.svg',
     },
     {
@@ -97,6 +113,7 @@ export default function Projects() {
       technologies: ['Next.js', 'TypeScript', 'Node.js', 'Database'],
       github: '#',
       demo: '#',
+      blogSlug: 'web-application',
       image: '/project-2.svg',
     },
     {
